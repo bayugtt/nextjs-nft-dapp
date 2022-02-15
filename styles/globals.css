@@ -6,6 +6,30 @@
   h1,
   h2,
   h3 {
-    @apply text-pink-500;
+    @apply text-gray-200;
   }
+  p,li {
+    @apply text-gray-400
+  }
+
+  .list-goalsStart li {
+    margin-bottom: 1rem;
+    background: url(../public/assets/bookmark.svg) no-repeat left top;
+    padding: 0px 0 0px 25px;
+  }
+  .list-goalsOngoing li {
+    margin-bottom: 1rem;
+    background: url(../public/assets/bookmark-check.svg) no-repeat left top;
+    padding: 0px 0 0px 25px;
+  }
+  .list-goalsFinish li {
+    margin-bottom: 1rem;
+    background: url(../public/assets/bookmark-check-fill.svg) no-repeat left top;
+    padding: 0px 0 0px 25px;
+  }
+}
+.list-gift {
+  margin-bottom: 1rem;
+  background: url(../public/assets/gift.svg) no-repeat top;
+  padding: 20px 0 0px 0px;
 }

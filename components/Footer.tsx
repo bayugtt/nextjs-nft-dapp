@@ -1,5 +1,5 @@
-import { FaHome, FaTwitter, FaDiscord, FaShip } from 'react-icons/fa';
-
+import { FaHome, FaTwitter, FaDiscord } from 'react-icons/fa';
+// FaShip
 import Container from './Container';
 import NextLink from './NextLink';
 
@@ -11,7 +11,7 @@ export default function Footer() {
       <Container>
         <div className="flex flex-col-reverse sm:flex-row justify-between items-center py-8">
           <div>
-            © {getCurrentYear()} {process.env.NEXT_PUBLIC_NFT_NAME}
+            Made with ♥ by MadDog
           </div>
 
           <div className="flex items-center space-x-2 mb-4 sm:mb-0">
@@ -40,7 +40,7 @@ export default function Footer() {
             >
               <FaDiscord />
             </a>
-            <a
+            {/* <a
               href={process.env.NEXT_PUBLIC_OPENSEA_URL}
               aria-label={`${process.env.NEXT_PUBLIC_NFT_NAME} on OpenSea`}
               rel="noopener noreferrer"
@@ -48,7 +48,7 @@ export default function Footer() {
               className="bg-gray-700 hover:bg-gray-600 rounded-full p-2"
             >
               <FaShip />
-            </a>
+            </a> */}
           </div>
         </div>
       </Container>

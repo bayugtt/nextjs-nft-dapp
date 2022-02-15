@@ -1,25 +1,31 @@
 export default function Roadmap() {
   return (
     <>
-      <h2 className="text-4xl mb-4">Roadmap</h2>
-      <ul className="list-disc pl-5 space-y-2 mb-4">
-        <li>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+      <h2 className="text-3xl text-center mb-4">Roadmap</h2>
+      <ul className="list-goalsFinish pl-4 space-y-1 mb-4">
+        <li> 
+          MadDog come to Emerald Mainnet.
         </li>
+        </ul>
+      <ul className="list-goalsOngoing pl-4 space-y-1 mb-4" >
         <li>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          First giveaway 11,200 $ROSE among MadDog holder.
+        </li>
+      </ul>
+      <ul className="list-goalsStart pl-4 space-y-1 mb-4" >
+        <li>
+          Setting up regular $YUZU Distribution every Sunday to all MadDog holder. 
+          The amount will equal among all holder base of amount NFT on wallet.<br/>
+        </li>
+      </ul>
+      <ul className="list-goalsStart pl-4 space-y-1 mb-4" >
+        <li>
+          Gain more source reveneu & deliver more airdrops, giveaways, competitions.
+        </li>
+      </ul>
+      <ul className="list-goalsStart pl-4 space-y-1 mb-4" >
+        <li>
+          Start to take another steps forward.
         </li>
       </ul>
     </>

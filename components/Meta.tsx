@@ -6,7 +6,7 @@ type Props = {
 };
 
 const meta = {
-  description: `${process.env.NEXT_PUBLIC_NFT_NAME} is an NFT collection of 10,000 unique characters.`,
+  description: `${process.env.NEXT_PUBLIC_NFT_NAME} is a brand new collection of 3333 algorithmically generated NFTs stored on Emerald Blockchain.`,
   ogImagePath: '/assets/card-image.png',
 };
 
@@ -16,7 +16,7 @@ export default function Meta({ pageTitle }: Props) {
   const ogType = router.pathname === '/' ? 'website' : 'article';
   const ogTitle = pageTitle
     ? pageTitle
-    : 'An NFT collection of 10,000 unique characters';
+    : 'An NFT collection of 3,333 unique characters';
   const ogImage = process.env.NEXT_PUBLIC_SITE_URL + meta.ogImagePath;
 
   return (

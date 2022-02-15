@@ -64,7 +64,7 @@ export default function Minting() {
   }
 
   function incrementMintAmount() {
-    if (mintAmount < 10) {
+    if (mintAmount < 20) {
       setMintAmount(mintAmount + 1);
     }
   }
@@ -77,8 +77,8 @@ export default function Minting() {
         ABI,
         provider
       );
-      const totalSupply = await contract.totalSupply();
-      setTotalSupply(totalSupply.toString());
+      const tuotalSupply = await contract.totalSupply();
+      setTotalSupply(tuotalSupply.toString());
     }
     if (
       active &&
@@ -93,8 +93,7 @@ export default function Minting() {
 
   return (
     <>
-      <h2 className="text-4xl mb-4">Minting</h2>
-
+      {/* <h2 className="text-center text-4xl mb-4">Minting</h2> */}
       {active && account ? (
         <div className="space-y-4 mb-4">
           <div className="bg-gray-800 border-dashed border-4 border-t-red-300 border-r-blue-300 border-b-green-300 border-l-yellow-300 rounded p-8 space-y-4">
@@ -121,7 +120,7 @@ export default function Minting() {
                 <button
                   type="button"
                   className={
-                    mintAmount === 10 ? 'text-gray-500 cursor-default' : ''
+                    mintAmount === 20 ? 'text-gray-500 cursor-default' : ''
                   }
                   onClick={incrementMintAmount}
                   disabled={false}
@@ -190,18 +189,6 @@ export default function Minting() {
               <div className="text-green-500 text-center">{message}</div>
             )}
             {errMsg && <div className="text-red-500 text-center">{errMsg}</div>}
-          </div>
-
-          <div className="space-y-4">
-            <p>
-              Please make sure you are connected to the correct address and the
-              correct network (Polygon Mainnet) before purchasing. The operation
-              cannot be undone after purchase.
-            </p>
-            <p>
-              We have set the gas limit to 285000 to successfully mint your NFT.
-              We recommend that you do not lower the gas limit.
-            </p>
           </div>
         </div>
       ) : (

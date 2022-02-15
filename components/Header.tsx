@@ -2,8 +2,8 @@ import Image from 'next/image';
 import { useEffect } from 'react';
 import { useWeb3React } from '@web3-react/core';
 import Blockies from 'react-blockies';
-import { FaTwitter, FaDiscord, FaShip } from 'react-icons/fa';
-
+import { FaTwitter, FaDiscord } from 'react-icons/fa';
+// FaShip
 import ConnectButton from './ConnectButton';
 import Container from './Container';
 import NextLink from './NextLink';
@@ -39,7 +39,7 @@ export default function Header() {
         chainId.toString() !== process.env.NEXT_PUBLIC_NETWORK_ID
       ) {
         setErrMsg(
-          `Change the network to ${process.env.NEXT_PUBLIC_NETWORK_ID}.`
+          `Change the network to ${process.env.NEXT_PUBLIC_NETWORK_NAME}.`
         );
       } else {
         setErrMsg('');
@@ -51,7 +51,7 @@ export default function Header() {
 
   return (
     <div className="sticky top-0 z-50">
-      <header className="bg-gray-900 border-b py-2">
+      <header className="bg-slate-500 border-solid border-b border-black py-1">
         <Container>
           <div className="flex justify-between items-center">
             <NextLink href="/" className="text-2xl font-bold text-white">
@@ -61,7 +61,7 @@ export default function Header() {
                   alt={process.env.NEXT_PUBLIC_NFT_NAME}
                   width={35}
                   height={35}
-                  className="rounded-full"
+                  className="rounded"
                 />
                 <span className="hidden sm:block ml-2">
                   {process.env.NEXT_PUBLIC_NFT_NAME}
@@ -88,7 +88,7 @@ export default function Header() {
               >
                 <FaDiscord />
               </a>
-              <a
+              {/* <a
                 href={process.env.NEXT_PUBLIC_OPENSEA_URL}
                 aria-label={`${process.env.NEXT_PUBLIC_NFT_NAME} on OpenSea`}
                 rel="noopener noreferrer"
@@ -96,7 +96,7 @@ export default function Header() {
                 className="bg-gray-700 hover:bg-gray-600 rounded-full p-2"
               >
                 <FaShip />
-              </a>
+              </a> */}
 
               {active && account ? (
                 <span className="flex items-center space-x-2 p-2 bg-gray-700 rounded-full">
