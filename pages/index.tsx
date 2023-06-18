@@ -24,6 +24,7 @@ const Home: NextPage = () => {
             {process.env.NEXT_PUBLIC_NFT_NAME}
           </h1>
           <p className="text-l">
+            <br/>
           Introducing DIGIERA, a groundbreaking collection of 3333 algorithmically generated NFTs that will redefine the very essence of digital art. Immerse yourself in a world where art and technology collide, as each piece within this collection is meticulously crafted through cutting-edge algorithms and stored securely on the revolutionary Zksync era.
           <br/>
           </p>
