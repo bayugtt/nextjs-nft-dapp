@@ -12,40 +12,38 @@ import topImage from '../public/assets/1920x600.png';
 const Home: NextPage = () => {
   return (
     <Layout>
-      <Head>
+      <Head full-width>
         <title>{process.env.NEXT_PUBLIC_NFT_NAME}</title>
       </Head>
 
       <Image src={topImage} alt={process.env.NEXT_PUBLIC_NFT_NAME} />
 
-      <div className="bg-slate-700 py-1">
+      <div className="bg-slate-700 py-1 full-width">
         <Prose>
           <h1 className="text-5xl text-slate-50 text-center font-bold mb-2">
             {process.env.NEXT_PUBLIC_NFT_NAME}
           </h1>
           <p className="text-l">
-          MadDog is a brand new collection of 3333 algorithmically generated NFTs stored on Emerald Blockchain.
-          <br/><p className='text-slate-300'>
-We will put 50% ROSE from sales to farm YUZU. 50% of farmed YUZU will reinvesting to gain more farm, the others will be distributed to MadDog NFTs holder through airdrops, giveaways, competitions, and more ...
-          </p><br/>
+          Introducing DIGIERA, a groundbreaking collection of 3333 algorithmically generated NFTs that will redefine the very essence of digital art. Immerse yourself in a world where art and technology collide, as each piece within this collection is meticulously crafted through cutting-edge algorithms and stored securely on the revolutionary Zksync era.
+          <br/>
           </p>
+        </Prose>
+      </div>
+
+      <div className="bg-slate-800 py-4 full-width">
+        <Prose>
+          <Minting />
         </Prose>
       </div>
 
       <div className="text-center bg-slate-700 py-3" >
       <Prose>
-        <p className='list-gift hover:text-fuchsia-400 text-slate-300'>
-          <b className='text-black hover:text-fuchsia-500 '>Special Thanks To Our Community</b>
-          <br/>We have total 113 winner (11,200 ROSE)<br/>
-          Every 20% Sold, 5 lucky holder will be choosen each 300 $ROSE.<br/>
-          50 $ROSE each for lucky Postman Hat minter, there are 88 NFTs Out There.
+        <p className='list-gift hover:text-fuchsia-400 text-slate-300 full-width'>
+          <b className='text-black hover:text-fuchsia-500 full-width'>Special Thanks To Our Community</b>
+          <br/>Don't miss your chance to own a piece of this groundbreaking collection. Immerse yourself in the revolutionary blend of algorithmic creativity and secure blockchain technology that DIGIERA represents. Whether you're an art connoisseur or a tech enthusiast, these NFTs are an opportunity to own a slice of digital history while embracing the future of artistic expression. Welcome to the world of DIGIERA
+          where artistry, innovation, and individuality intertwine.
         </p>
       </Prose>
-      </div>
-      <div className="bg-slate-800 py-4">
-        <Prose>
-          <Minting />
-        </Prose>
       </div>
 
       {/* <div className="bg-slate-700 py-4">
@@ -54,7 +52,7 @@ We will put 50% ROSE from sales to farm YUZU. 50% of farmed YUZU will reinvestin
         </Prose>
       </div> */}
 
-      <div className="bg-slate-800 py-4">
+      <div className="bg-slate-800 py-4 full-width">
         <Prose>
           <Roadmap />
         </Prose>

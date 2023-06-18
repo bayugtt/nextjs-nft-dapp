@@ -11,7 +11,7 @@ export default function Footer() {
       <Container>
         <div className="flex flex-col-reverse sm:flex-row justify-between items-center py-8">
           <div>
-            Made with ♥ by MadDog
+            Made with ♥ by DIGIERA
           </div>
 
           <div className="flex items-center space-x-2 mb-4 sm:mb-0">

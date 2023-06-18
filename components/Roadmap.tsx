@@ -4,17 +4,17 @@ export default function Roadmap() {
       <h2 className="text-3xl text-center mb-4">Roadmap</h2>
       <ul className="list-goalsFinish pl-4 space-y-1 mb-4">
         <li> 
-          MadDog come to Emerald Mainnet.
+          DIGIERA come to Emerald Mainnet.
         </li>
         </ul>
       <ul className="list-goalsOngoing pl-4 space-y-1 mb-4" >
         <li>
-          First giveaway 11,200 $ROSE among MadDog holder.
+          First giveaway 11,200 $ROSE among DIGIERA holder.
         </li>
       </ul>
       <ul className="list-goalsStart pl-4 space-y-1 mb-4" >
         <li>
-          Setting up regular $YUZU Distribution every Sunday to all MadDog holder. 
+          Setting up regular $YUZU Distribution every Sunday to all DIGIERA holder. 
           The amount will equal among all holder base of amount NFT on wallet.<br/>
         </li>
       </ul>

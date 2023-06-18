@@ -6,10 +6,14 @@
   h1,
   h2,
   h3 {
-    @apply text-gray-200;
+     color:text-gray-200;
   }
+  .full-width {
+    width: 100%;
+  }
+  
   p,li {
-    @apply text-gray-400
+    color:list-goalsOngoing bg-no-repeat bg-left-top bg-bookmark-check bg-contain py-0 pl-6 mb-4;
   }
 
   .list-goalsStart li {
